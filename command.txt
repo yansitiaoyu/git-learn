@@ -7,3 +7,9 @@ git status 查看文件提交状态，被修改未暂存，已暂存未提交
 git add 将工作区文件提交到暂存区
 git commit -m "****" 将暂存区文件提交到本地仓库，"****"对该次提交的描述
 git diff [HEAD,--cached] 不加参数git diff查看工作区，暂存区之间的差异，HEAD是指向本地仓库唯一master分支的指针，查看本地仓库和工作区，暂存区之间的差异，--cached查看暂存区和工作区以及本地仓库之间的差异
+git log [--oneline] 查看提交历史
+ssh-keygen -t rsa -C "github邮箱" 需在C:\Users\用户文件下创建.ssh文件夹，使用前面命令生成ssh私钥和公钥，默认是id_rsa文件，如果不是第一次配置，需要自己定义文件名以防止原来的ssh密钥被覆盖
+git remote add origin git@github.com:yansitiaoyu/git-learn.git 建立本地仓库和远程仓库的连接
+git branch -M main 更改本地仓库主分支的名称，改为main使其远程仓库主分支名称相同
+git push -u origin mian 使本地主分支与远程主分支关联
+
