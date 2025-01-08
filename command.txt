@@ -1,0 +1,8 @@
+mkdir file 创建一个文件夹
+cd file 进入file文件
+git init 将该文件创建为git仓库
+ll 查看工作区文件
+git ls-files 查看暂存区文件
+git status 查看文件提交状态，被修改未暂存，已暂存未提交
+git add 将工作区文件提交到暂存区
+git commit -m "****" 将暂存区文件提交到本地仓库，"****"对该次提交的描述 
